@@ -6,4 +6,9 @@ public class Formula {
         double denominatorVal = 2 + Math.abs(x - (2 * x) / (1 + Math.pow(x,2) * Math.pow(y, 2)));
         return numeratorVal / denominatorVal + x;
     }
+
+    public static void main(String[] args) {
+        Formula formula = new Formula();
+        System.out.println(formula.calculateFormula(2, 5));
+    }
 }
